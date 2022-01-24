@@ -1,0 +1,36 @@
+<html>
+    <body>
+       <h1 id = "header"> What 's your name? </h1>
+       <input type="text" id = "input"/>
+       <button onclick="pressed()">Red</button>
+       <button onclick="green()">Green</button>
+       <button onclick="blue()">Blue</button>
+       <p id = "output"></p>
+        <script type = "text/javascript">
+        function pressed(){
+            var age = parseInt(document.getElementById("input").value)
+            console.log(age)
+            switch(age){
+                case 20:
+                    document.getElementById("output").innerHTML = "You less than 20"
+                    break;
+                case 10:
+                    document.getElementById("output").innerHTML = "You older than 20"
+                    break;
+                default:
+                    document.getElementById("output").innerHTML = "Not found"
+                    break;
+            }
+        }
+           function red(){
+                document.getElementById("header").style.color = "red"
+           }
+           function green(){
+                document.getElementById("header").style.color = "green"
+           }
+           function blue(){
+                document.getElementById("header").style.color = "blue"
+           }
+        </script>
+    </body>
+</html>

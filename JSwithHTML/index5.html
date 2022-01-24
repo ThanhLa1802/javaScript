@@ -1,0 +1,27 @@
+<html>
+    <body>
+       <h1 id = "header"> What 's your name? </h1>
+       <input type="text" id = "input"/>
+       <button onclick="pressed()">Red</button>
+       <button onclick="green()">Green</button>
+       <button onclick="blue()">Blue</button>
+       <p id = "output"></p>
+        <script type = "text/javascript">
+        function pressed(){
+            var data = document.getElementById("input").value
+            var output = document.getElementById("output")
+            output.innerHTML = data.trim();
+            console.log(output.innerHTML)
+        }
+           function red(){
+                document.getElementById("header").style.color = "red"
+           }
+           function green(){
+                document.getElementById("header").style.color = "green"
+           }
+           function blue(){
+                document.getElementById("header").style.color = "blue"
+           }
+        </script>
+    </body>
+</html>
